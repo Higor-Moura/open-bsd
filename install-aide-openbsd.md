@@ -4,24 +4,24 @@
 Ele faz isso criando um banco de dados de linha de base de arquivos em uma execução inicial e, em seguida, 
 verifica esse banco de dados em relação ao sistema em execuções subsequentes.
 
-## 1. VIRE ROOT:
+## 1. Vire ROOT:
 
 ```
 SU -
 ```
-## 2. ATUALIZE E INSTALE A LISTA DE PACOTES:
+## 2. Atualize e instale a lista de pacotes:
 
 ```
 pkg_add -u
 ```
 
-## 3. INSTALE O AIDE:
+## 3. Instale o aide:
 
 ```
 pkg_add aide
 ```
 
-## 4. NO TERMINAL CRIE UM BANCO DE DADOS USANDO O COMANDO ABAIXO:
+## 4. No terminal crie um banco de dados usando o comando abaixo:
 
 ```
 aide --init
@@ -30,7 +30,7 @@ aide --init
 > O comando a cima gera um novo banco de dados em /var/db/aide.db.new
 {.is-info}
 
-## 4. INSTALE O BANCO DE DADOS RECEM GERADO:
+## 4. Instale o banco de dados recem gerado:
 
 ```
 cp /var/db/aide.db.new /var/db/aide.db 
@@ -64,7 +64,7 @@ database_new=file:/var/db/aide.db.new
 
 **SAIA DO ARQUIVO SALVANDO.** 
 
-## 9. FAÇA UM TESTE, CRIANDO DIRETORIO E ARQUIVOS.
+## 9. Faça um teste, criando diretorio e arquivos.
 
 ```
 mkdir /root/aide-test
@@ -72,7 +72,7 @@ touch /root/aide-test/test1
 touch /root/aide-test/test2
 ```
 
-## 10. execute o Aide check para detectar novos arquivos e diretórios com o seguinte comando:
+## 10. Execute o Aide check para detectar novos arquivos e diretórios com o seguinte comando:
 
 ```
 aide -c /etc/aide.conf --check
