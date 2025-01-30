@@ -3,6 +3,7 @@
 > AIDE é um sistema de detecção de intrusão baseado em host (HIDS) para verificar a integridade de arquivos. 
 Ele faz isso criando um banco de dados de linha de base de arquivos em uma execução inicial e, em seguida, 
 verifica esse banco de dados em relação ao sistema em execuções subsequentes.
+
 {.is-info}
 
 ## 1. VIRE ROOT:
